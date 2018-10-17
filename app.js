@@ -5,6 +5,6 @@ var schedule = require('node-schedule');
 var app = express();
 app.use('/', Router);
 module.exports = app;
-var job = schedule.scheduleJob({second :20}, function(){
+var job = schedule.scheduleJob({hour :6}, function(){
     reminder.getReminder()
   });
